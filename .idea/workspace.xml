@@ -1,15 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3153cac3-0cee-408d-ad56-a9443060db30" name="Default Changelist" comment="" />
+    <list default="true" id="3153cac3-0cee-408d-ad56-a9443060db30" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/enter_mark.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/unit/enter_mark_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/view_grid.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view_grid.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/acceptance/tic_tac_toe_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/acceptance/tic_tac_toe_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/unit/view_grid_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/unit/view_grid_spec.rb" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1QapUSiLeGFNqvDcfhLVZkDRNE5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RunDashboard">
@@ -35,11 +50,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1568018576646</updated>
-      <workItem from="1568018577771" duration="6747000" />
+      <workItem from="1568018577771" duration="14808000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
