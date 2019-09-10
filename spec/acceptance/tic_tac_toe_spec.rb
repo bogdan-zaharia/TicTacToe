@@ -3,22 +3,22 @@ require 'grid'
 require 'enter_mark'
 require 'generate_ai_position'
 require 'play_game'
+require 'in_memory_gateway'
 
-class InMemoryGateway
-  attr_accessor :grid
-  def initialize(grid)
-    @grid = grid
-  end
-
-  def save(input)
-    @grid.marks = input
-  end
-
-  def all
-    @grid.marks
-  end
-end
-
+# class InMemoryGateway
+#   attr_accessor :grid
+#   def initialize(grid)
+#     @grid = grid
+#   end
+#
+#   def save(input)
+#     @grid.marks = input
+#   end
+#
+#   def all
+#     @grid.marks
+#   end
+# end
 
 
 describe 'tic tac toe' do
@@ -89,4 +89,5 @@ it "can input an 'X' into a partly populated grid" do
     game = PlayGame.new
     expect(game.execute).to eq("AI").or eq("Player").or eq("Draw")
   end
+
 end

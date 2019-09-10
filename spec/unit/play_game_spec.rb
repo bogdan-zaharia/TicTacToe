@@ -4,5 +4,8 @@ describe PlayGame do
     expect(game.execute).to eq("AI").or eq("Player").or eq("Draw")
   end
 
-  it ""
+  xit "can check if the game isn't ended based on the empty grid" do
+    game = PlayGame.new
+
+  end
 end
