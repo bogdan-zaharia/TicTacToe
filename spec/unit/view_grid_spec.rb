@@ -9,7 +9,7 @@ describe ViewGrid do
     end
 
     def all
-      @grid.marks
+      @grid.marks #might need to change to @grid
     end
   end
 
