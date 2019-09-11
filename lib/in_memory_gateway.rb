@@ -5,7 +5,7 @@ class InMemoryGateway
   end
 
   def save(input)
-    @grid.marks = input
+    @grid.marks = input # array, not object
   end
 
   def all

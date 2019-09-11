@@ -1,34 +1,22 @@
 require '../lib/generate_ai_position'
+# require 'generate_ai_position'
 
 class EnterMark
   def initialize(gateway)
     @gateway = gateway
   end
 
-  # def gets_position_from_the_keyboard
-  #   p = read position from keyboard
-  #   values[hash[:position]] = p
-  # end
-
-
-
   def execute(hash)
-
     values = @gateway.grid.marks
     if hash[:player]
-      puts "Player's turn"
-      position = gets().chomp.to_i
-      if values[position] == ' '
-        values[position] = 'X'
+      if values[hash[:position]] == ' '
+        values[hash[:position]] = 'X'
         @gateway.save(values)
       else
-        puts 'Please choose a different position'
-        self.execute({player: true})
+       return :error
       end
     else
-      puts "AI turn"
-      position = GenerateAIPosition.new(@gateway).execute({})
-      values[position] = 'O'
+      values[hash[:position]] = 'O'
       @gateway.save(values)
     end
   end

@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3153cac3-0cee-408d-ad56-a9443060db30" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/in_memory_gateway.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/tic_tac_toe.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/enter_mark.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/enter_mark.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/generate_ai_position.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generate_ai_position.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/in_memory_gateway.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/in_memory_gateway.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/play_game.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/play_game.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/view_grid.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view_grid.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spec/acceptance/tic_tac_toe_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/acceptance/tic_tac_toe_spec.rb" afterDir="false" />
@@ -52,7 +51,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1568018576646</updated>
-      <workItem from="1568018577771" duration="31589000" />
+      <workItem from="1568018577771" duration="44352000" />
     </task>
     <servers />
   </component>
