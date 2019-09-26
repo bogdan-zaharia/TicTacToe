@@ -77,7 +77,7 @@ it "can input an 'X' into a partly populated grid" do
     expect(grid.execute({})).to_not eq({grid: "   |   |   \n-----------\n   |   |   \n-----------\n   |   |   \n"})
   end
 
-  it "allows the AI to generate a position for its mark" do
+  xit "allows the AI to generate a position for its mark" do
     gateway = InMemoryGateway.new(Grid.new(['X','X','X','X','X','X','X','X',' ']))
     position_AI = GenerateAIPosition.new(gateway).execute({})
     EnterMark.new(gateway).execute({position: position_AI, player: false})
@@ -85,9 +85,12 @@ it "can input an 'X' into a partly populated grid" do
     expect(grid.execute({})).to eq({grid: " X | X | X \n-----------\n X | X | X \n-----------\n X | X | O \n"})
   end
 
-  xit "can play a game" do
+  it "can print out the outcome of the game on the screen" do
     game = PlayGame.new
-    expect(game.execute).to eq("AI").or eq("Player").or eq("Draw")
+    #expect { game.execute }.to output.to_stdout
+    expect { game.display_winner(:draw) }.to output("DRAW!\n").to_stdout
+    expect { game.display_winner(:aiwins) }.to output("AI WINS!\n").to_stdout
+    expect { game.display_winner(:playerwins) }.to output("PLAYER WINS!\n").to_stdout
   end
 
   it "can check when the game has ended" do
@@ -106,5 +109,10 @@ it "can input an 'X' into a partly populated grid" do
     game = PlayGame.new
     gateway = InMemoryGateway.new(Grid.new(['O',' ','X',' ','O',' ',' ',' ','O']))
     expect(game.game_end?(gateway)).to eq(true)
+  end
+
+  xit "always results in AI WINS or DRAW" do
+    game = PlayGame.new
+    expect(game.execute).to eq(:draw).or eq(:aiwins)
   end
 end

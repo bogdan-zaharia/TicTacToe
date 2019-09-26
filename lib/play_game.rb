@@ -5,6 +5,7 @@ require '../lib/view_grid'
 # require 'enter_mark'
 # require 'grid'
 # require 'view_grid'
+# require 'in_memory_gateway'
 
 
 class PlayGame
@@ -76,7 +77,7 @@ class PlayGame
       end
     end
     game_outcome = outcome(@gateway)
-    #puts (game_outcome.to_s.upcase.gsub(/W/, " W")) + '!'
     display_winner(game_outcome)
+    return game_outcome
   end
 end

@@ -1,5 +1,5 @@
 require '../lib/generate_ai_position'
-# require 'generate_ai_position'
+#require 'generate_ai_position'
 
 class EnterMark
   def initialize(gateway)
@@ -21,12 +21,3 @@ class EnterMark
     end
   end
 end
-
-
-
-#gets_position_from_the_keyboard
-#while(values[hash[:position]] != ' ') do
-#puts('please enter a valid position')
-#gets_position_from_the_keyboard
-#hash[:position] = gets_position_from_the_keyboard
-#end

@@ -1,7 +1,11 @@
 describe PlayGame do
-  xit "can play a game" do
+
+  it "can print out the outcome of the game on the screen" do
     game = PlayGame.new
-    expect(game.execute).to eq("AI").or eq("Player").or eq("Draw")
+    #expect { game.execute }.to output.to_stdout
+    expect { game.display_winner(:draw) }.to output("DRAW!\n").to_stdout
+    expect { game.display_winner(:aiwins) }.to output("AI WINS!\n").to_stdout
+    expect { game.display_winner(:playerwins) }.to output("PLAYER WINS!\n").to_stdout
   end
 
   it "can check when the game has ended" do
